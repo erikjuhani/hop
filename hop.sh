@@ -204,6 +204,9 @@ puzzle() {
   mkdir -p "${input_path}"
   mkdir -p "${puzzle_path}"
 
+  rm "${input_path}/day${day}"
+  rm "${puzzle_path}/day${day}.md"
+
   aoc download --year "${year}" --day "${day}" --input-file "${input_path}/day${day}" --puzzle-file "${puzzle_path}/day${day}.md"
 }
 
