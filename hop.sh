@@ -215,7 +215,7 @@ parse_dates() {
   day_arg="$2"
 
   current_year="$(date +%Y)"
-  current_day="$(date +%d)"
+  current_day="$(date +%-d)"
   current_month="$(date +%m)"
   current_utc_hour="$(date -u +%H)"
 
